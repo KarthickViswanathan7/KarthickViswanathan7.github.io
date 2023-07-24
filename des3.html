@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Form</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      background-image: url("https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .form {
+      width: 500px;
+      margin: 0 auto;
+      padding: 50px;
+      border: 5px solid #121111;
+      background-color: #ffffff;
+
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #000;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .error {
+      color: red;
+    }
+    h1{
+        color: rgb(4, 4, 4);
+    }
+  </style>
+</head>
+<body>
+  <div class="form">
+    <h1>LOGIN FORM</h1>
+    <span class="error">* This field is required</span>
+    <input type="text" name="name" placeholder="Name">
+    <span class="error">* This field is required</span>
+    <input type="password" name="password" placeholder="Password">  
+    <span class="error">* This field is required</span>
+    <input type="password" name="repassword" placeholder="Re-enter Password">
+    <span class="error">* This field is required</span>
+    <input type="email" name="email" placeholder="email">
+    <span class="error">* This field is required</span>
+    <input type="phone " name="phone" placeholder="PhoneNumber">
+    <select name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <input type="submit" value="Submit">
+  </div>
+</body>
+</html>
